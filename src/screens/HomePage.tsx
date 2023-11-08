@@ -9,7 +9,7 @@ import Welcome from '../../assets/images/Welcome.svg';
 
 import styles from './styles/HomePageStyles';
 
-const {fontScale, height, width} = Dimensions.get('window');
+const {fontScale, height} = Dimensions.get('window');
 
 const HomePage: React.FC<{navigation: any; route: any}> = ({
   navigation,

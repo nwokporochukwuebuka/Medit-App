@@ -1,11 +1,4 @@
-import {
-  Alert,
-  Dimensions,
-  ScrollView,
-  Text,
-  TextInput,
-  View,
-} from 'react-native';
+import {Alert, Dimensions, Text, TextInput, View} from 'react-native';
 import React, {useState} from 'react';
 import CheckBox from 'react-native-check-box';
 
@@ -105,6 +98,7 @@ const SignUp: React.FC<{navigation: any}> = ({navigation}) => {
                   style={styles.inputStyle}
                   value={values.name}
                   autoCapitalize="sentences"
+                  autoCorrect={false}
                   onChangeText={handleChange('name')}
                   onBlur={() => setFieldTouched('name')}
                 />

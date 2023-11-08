@@ -2,13 +2,11 @@ import {
   Alert,
   Dimensions,
   Pressable,
-  ScrollView,
   Text,
   TextInput,
   View,
 } from 'react-native';
 import React, {useState} from 'react';
-import CheckBox from 'react-native-check-box';
 
 import Background from '../../assets/images/Background.svg';
 import Google from '../../assets/images/Google.svg';
@@ -19,14 +17,12 @@ import FontAwesome6 from 'react-native-vector-icons/FontAwesome6';
 import Button from '../components/UI/Button';
 import styles from './styles/SignUpStyles';
 import {Formik} from 'formik';
-import SignUpSchema from '../config/SignUpSchema';
 import SignInSchema from '../config/SignInSchema';
 
 const {height, width} = Dimensions.get('window');
 
 const Login: React.FC<{navigation: any}> = ({navigation}) => {
   const [showPassword, setShowPassword] = useState<boolean>(true);
-  const [isChecked, setIsChecked] = useState<boolean>(false);
 
   return (
     <View style={styles.container}>
